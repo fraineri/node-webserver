@@ -23,6 +23,10 @@ app.get('/',(req, res)=>{
   res.render('index.hbs',{username:'Franco'});
 });
 
+app.get('/gallery',(req, res)=>{
+  res.render('gallery.hbs');
+});
+
 app.use((req,res)=>{
   res.send('<h1>ERROR 404</h1><h2>ROUTE NOT FOUND</h2>');
 });
